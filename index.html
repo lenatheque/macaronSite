@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>French Macarons 🥮</title>
+    <style>
+      body {
+        background-image: url("https://images.pexels.com/photos/3553703/pexels-photo-3553703.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+      }
+
+      h1 {
+        text-align: center;
+        color: #f95ae6;
+      }
+      .video {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+      }
+      .video iframe,
+      .video object,
+      .video embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      iframe {
+        width: 100%;
+        height: auto;
+      }
+
+      h2 {
+        text-align: center;
+        color: white;
+        background-color: #fa01be;
+        border: none;
+        padding: 15px;
+        font-size: 20px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+      a {
+        font-size: 20px;
+        color: #7d51e8;
+        text-decoration: none;
+        text-align: center;
+      }
+
+      p {
+        color: #5f3a26;
+        line-height: 1.5;
+        font-size: 20px;
+        margin: 20px 0 10px;
+        text-align: left;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px 80px;
+        background: linear-gradient(
+          207deg,
+          rgba(253, 251, 251, 1) 13%,
+          rgba(244, 236, 245, 0.6092333836858006) 80%,
+          rgba(215, 158, 137, 1) 100%
+        );
+      }
+
+      .textContainer {
+        font-size: 20px;
+        text-align: center;
+      }
+      .white {
+        background-color: white;
+        border-radius: 10px;
+      }
+      .white:hover {
+        background-color: rgba(244, 236, 245, 0.6092333836858006);
+      }
+      a.learn {
+        font-size: 20px;
+        color: #7d51e8;
+        text-decoration: none;
+        text-align: center;
+      }
+
+      .learn:hover {
+        color: #fa01be;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        background-color: yellowgreen;
+        color: #fa01be;
+        font-size: 20px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        padding: 20px 25px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+        color: #fa01be;
+        background-color: #a198d9;
+      }
+
+      .footer {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <hr />
+      <h1>Le Macaron French Pastries</h1>
+      <hr />
+      <div class="video">
+        <iframe
+          src="https://player.vimeo.com/video/129844550"
+          width="640"
+          height="353"
+          frameborder="0"
+          allow="autoplay; fullscreen"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <hr />
+      <div class="textContainer">
+        <p>
+          French Macaron is a sweet meringue- based confection made with egg
+          white, icing sugar, granulated sugar, almond meal, and food coloring.
+        </p>
+
+        <p>
+          It is said that the abbess of Remiremont founded an order of nuns
+          called the "Dames du Saint-Sacrement" with strict dietary rules
+          prohibiting the consumption of meat. Two nuns, Sisters Marguerite, and
+          Marie-Elisabeth are credited with creating the Nancy macaron to fit
+          their dietary requirements.
+        </p>
+        <p>
+          They became known as the
+          <b>'Macaron Sisters' (Les Soeurs Macarons)</b>. In 1952, the city of
+          Nancy honoured them by giving their name to the Rue de la Hache, where
+          the macaron was invented.
+        </p>
+        <a
+          href="https://en.wikipedia.org/wiki/Macaron#:~:text=According%20to%20Larousse%20Gastronomique%20the,to%20pay%20for%20their%20housing."
+          target="_blank"
+          class="learn"
+        >
+          <em>Learn more here</em>
+        </a>
+      </div>
+      <hr />
+      <div class="white">
+        <h2>Check out our Menu</h2>
+        <img
+          src="https://www.angelosbakery.com/wp-content/uploads/2019/03/Flavour-Guide-1.png?x69317"
+          alt="French Macaroons"
+        />
+      </div>
+      <button class="buy-button"><b>Buy your Macaroon!</b></button>
+
+      <p class="footer">
+        This page was built by
+        <a href="https://lenascode.tech/portfolio/" target="_blank">
+          Lorena Alvarez
+        </a>
+      </p>
+    </div>
+    <script>
+      function empty() {
+        alert("Please add info 😮");
+      }
+      function buy() {
+        let name = prompt("Hi! What is your name? 🙋🏻‍♀️");
+        while (name === "") {
+          empty();
+          name = prompt("Hi! What is your name? 🙋🏻‍♀️");
+        }
+        if (name !== null) {
+          let email = prompt("What is your email address?✉️");
+          while (email === "") {
+            empty();
+            email = prompt("What is your email address?📨");
+          }
+          if (email !== null) {
+            let number = prompt("How many macarons would you like to order?🤤");
+            while (number === "") {
+              empty();
+              number = prompt("How many macarons would you like to order?🤤");
+            }
+
+            if (number !== null) {
+              let flavor = prompt("Select your Macaron flavors? 🤩");
+              while (number === "") {
+                empty();
+                flavor = prompt("Select your Macaron flavors? 🤩");
+              }
+              alert(
+                "Thank you , " +
+                  name +
+                  " ,🎉🎉 for your order of " +
+                  flavor +
+                  " macarons! 😍" +
+                  " \r\n  \r\n We'll  send you the order status via email at:  " +
+                  email +
+                  "📩"
+              );
+            }
+          }
+        }
+      }
+
+      let buyButton = document.querySelector(".buy-button");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
